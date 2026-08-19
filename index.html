@@ -1,10 +1,175 @@
-<html>
-    <body>
-        <h1>My - Profile</h1>
-        <p>My name is Nuttayakorn Sangsawang</p>
-        <p>6823765299 / college of innovation</p>
-        <p>แอปที่อยากสร้างในวิชานี้ : แอปจดความดัน</p>
-        <a href="https://github.com/nuttayakorns">GitHub ของฉัน</a>
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    </body>
+    <title>My Profile - Nuttayakorn</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            min-height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            color: #333;
+        }
+
+        .profile-card {
+            width: 90%;
+            max-width: 500px;
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+
+            text-align: center;
+
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+
+            animation: fadeIn 1s ease;
+        }
+
+        .profile-icon {
+            width: 100px;
+            height: 100px;
+
+            margin: 0 auto 20px;
+
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+
+            border-radius: 50%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .name {
+            font-size: 20px;
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+
+        .student-info {
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .app {
+            background: #f3f4ff;
+            padding: 15px;
+            border-radius: 12px;
+            margin: 20px 0;
+
+            color: #555;
+        }
+
+        .app strong {
+            display: block;
+            color: #667eea;
+            margin-bottom: 5px;
+        }
+
+        .github-btn {
+            display: inline-block;
+
+            background: #24292e;
+            color: white;
+
+            text-decoration: none;
+
+            padding: 12px 25px;
+            border-radius: 10px;
+
+            font-weight: bold;
+
+            transition: 0.3s;
+        }
+
+        .github-btn:hover {
+            background: #000;
+            transform: translateY(-3px);
+
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 500px) {
+            .profile-card {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 26px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="profile-card">
+
+        <div class="profile-icon">
+            N
+        </div>
+
+        <h1>My Profile</h1>
+
+        <p class="name">
+            Nuttayakorn Sangsawang
+        </p>
+
+        <p class="student-info">
+            6823765299 / College of Innovation
+        </p>
+
+        <div class="app">
+            <strong>💡 แอปที่อยากสร้างในวิชานี้</strong>
+            แอปจดความดัน
+        </div>
+
+        <a
+            class="github-btn"
+            href="https://github.com/nuttayakorns"
+            target="_blank"
+        >
+            🐙 My GitHub
+        </a>
+
+    </div>
+
+</body>
 </html>
